@@ -1,0 +1,39 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <section>
+      <h2>Add Profile</h2>
+      <form id="addProfileForm">
+        <input placeholder="ID" type="number" id="profileId" />
+        <input placeholder="Name" type="text" id="profileName" />
+        <input placeholder="Age" type="number" id="profileAge" />
+        <button type="submit">Add Profile</button>
+      </form>
+    </section>
+    <section>
+      <h2>Remove Profile</h2>
+      <form id="removeFormHandler">
+        <input id="profileLocation" placeholder="ID" type="number" />
+        <button id="removeProfile">Remove Profile</button>
+      </form>
+
+      <ul id="profileList"></ul>
+    </section>
+    <p>Average Age: <span id="avgAge">0</span></p>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
